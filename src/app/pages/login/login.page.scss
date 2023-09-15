@@ -1,0 +1,28 @@
+#bg{
+    height: 50%;
+    width: 500px;
+    background: var(--ion-color-dark) url('../../../assets/bgp.png') no-repeat center center/cover;
+    border-radius: 0 0 45% 45%;
+    margin-left: -20vw;
+}
+
+ion-list{
+    margin-top: 6vh;
+    ion-list-header{
+        font-weight: 1000;
+        font-size: 1.5rem;
+    }
+    #fil{
+        border: 1px solid var(--ion-color-light);
+        border-radius: 20px;
+        // -webkit-box-shadow: 0 6px 4px 4px var(--ion-color-medium);
+        // -moz-box-shadow: 0 6px 4px 4px var(--ion-color-medium);
+        box-shadow: 0 6px 4px 4px var(--ion-color-medium);
+
+    }
+}
+
+ion-icon{
+    height: 50px;
+    width: 50px;
+}

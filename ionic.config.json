@@ -1,0 +1,7 @@
+{
+  "name": "SampleIoT",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
