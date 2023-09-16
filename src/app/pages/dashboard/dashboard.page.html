@@ -1,12 +1,61 @@
-<ion-content class="ion-padding">
-  <ion-fab horizontal="end" vertical="bottom" slot="fixed">
-    <ion-fab-button size="small">
-      <ion-icon name="apps" size="small"></ion-icon>
-    </ion-fab-button>
-    <ion-fab-list side="top">
-      <ion-fab-button>
-        <ion-icon name="exit-outline" label="Panel"></ion-icon>
-      </ion-fab-button>
-    </ion-fab-list>
-  </ion-fab>
+<ion-header class="ion-no-border">
+ <ion-item lines="none">
+    <ion-button fill="clear" slot="start" color="light">
+      <ion-icon slot="icon-only"name="menu" style="height: 30px; width: 30px;"></ion-icon>
+    </ion-button>
+  <ion-avatar slot="end">
+    <img src="../../../assets/4.png">
+  </ion-avatar>
+ </ion-item>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="light">
+  
+  <div class="main-header">
+    
+    <ion-grid>
+      <ion-row>
+        <ion-col id="ats">
+          <h1><b>22°C</b></h1>
+          <h3>Avg Oil Temp</h3>
+        </ion-col>
+        <ion-col id="ats">
+          <h1><b>60°F</b></h1>
+          <h3>Outside Temp</h3>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col id="ats">
+          <h1><b>60%</b></h1>
+          <h3>Humadity</h3>
+        </ion-col>
+        <ion-col id="ats">
+          <h1><b>3</b></h1>
+          <h3>Devices</h3>
+        </ion-col>
+      </ion-row>
+
+      <ion-row id="room">
+        <ion-label>Room</ion-label>
+      </ion-row>
+      <ion-row>
+        <ion-col id="rm">
+          <ion-button fill="clear" color="light" id="cl">Mousture Sensor</ion-button>
+        </ion-col>
+        <ion-col id="rm">
+          <ion-button fill="clear" color="light" id="cl">NPK Sensor</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col id="rm">
+          <ion-button fill="clear" color="light" id="cl">Temp</ion-button>
+        </ion-col>
+        <ion-col id="rm">
+          <ion-button fill="clear" color="light" id="cl">Drawing Room</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
 </ion-content>

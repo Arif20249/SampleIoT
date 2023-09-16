@@ -19,6 +19,14 @@ const routes: Routes = [
     path: 'dashboard',
     loadChildren: () => import('./pages/dashboard/dashboard.module').then( m => m.DashboardPageModule)
   },
+  {
+    path: 'panel-control',
+    loadChildren: () => import('./pages/panel-control/panel-control.module').then( m => m.PanelControlPageModule)
+  },
+  {
+    path: 'menu',
+    loadChildren: () => import('./pages/menu/menu.module').then( m => m.MenuPageModule)
+  },
 ];
 
 @NgModule({
