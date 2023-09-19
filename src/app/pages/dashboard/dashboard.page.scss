@@ -13,6 +13,13 @@ ion-header {
     }
 }
 
+ion-toolbar{
+    --background: transparent;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    color: white;
+}
+
 ion-content{
     .main-header {
         height: 45vh;
@@ -71,4 +78,37 @@ h3{
 }
 #cl{
     font-size: 16px;
+}
+
+ion-fab-button {
+    --background: white;
+    --background-activated: #938dd9;
+    --background-hover: #a3e681;
+    --border-radius: 15px;
+    --box-shadow: 0 1px 10px var(--ion-color-dark);
+    --color: black;
+  }
+
+#fab1{
+    position: absolute;
+    width: 70px;
+    height: 20px;
+    border-radius: 15px;
+    box-shadow: 0 1px 10px var(--ion-color-dark);
+    margin-bottom: 15px;
+    margin-right: 120px;
+    background: white;
+    text-align: center;
+
+}
+
+#fab2{
+    position: absolute;
+    width: 120px;
+    margin-bottom: 65px;
+    margin-right: 170px;
+    background: white;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 1px 10px var(--ion-color-dark);
 }

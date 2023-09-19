@@ -1,8 +1,5 @@
 <ion-header class="ion-no-border">
  <ion-item lines="none">
-    <ion-button fill="clear" slot="start" color="light">
-      <ion-icon slot="icon-only"name="menu" style="height: 30px; width: 30px;"></ion-icon>
-    </ion-button>
   <ion-avatar slot="end">
     <img src="../../../assets/4.png">
   </ion-avatar>
@@ -10,7 +7,12 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" color="light">
-  
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-title size="large">WELCOME !!</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
   <div class="main-header">
     
     <ion-grid>
@@ -37,7 +39,7 @@
       </ion-row>
 
       <ion-row id="room">
-        <ion-label>Room</ion-label>
+        <ion-label><b>Room</b></ion-label>
       </ion-row>
       <ion-row>
         <ion-col id="rm">
@@ -57,5 +59,21 @@
       </ion-row>
     </ion-grid>
 
+
+    <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+      <ion-fab-button size="small">
+        <ion-icon name="chevron-up-circle"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list side="top">
+        <ion-label id="fab1"><b>Log Out</b></ion-label>
+        <ion-fab-button>
+          <ion-icon name="exit"></ion-icon>
+        </ion-fab-button>
+        <ion-label id="fab2"><b>Panel Kontrol</b></ion-label>
+        <ion-fab-button>
+          <ion-icon name="construct"></ion-icon>
+        </ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
   </div>
 </ion-content>
