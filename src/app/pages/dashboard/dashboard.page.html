@@ -42,7 +42,7 @@
         <ion-label><b>Room</b></ion-label>
       </ion-row>
       <ion-row>
-        <ion-col id="rm">
+        <ion-col id="rm" >
           <ion-button fill="clear" color="light" id="cl">Mousture Sensor</ion-button>
         </ion-col>
         <ion-col id="rm">
@@ -66,11 +66,11 @@
       </ion-fab-button>
       <ion-fab-list side="top">
         <ion-label id="fab1"><b>Log Out</b></ion-label>
-        <ion-fab-button>
+        <ion-fab-button (click)="logout()">
           <ion-icon name="exit"></ion-icon>
         </ion-fab-button>
         <ion-label id="fab2"><b>Panel Kontrol</b></ion-label>
-        <ion-fab-button>
+        <ion-fab-button (click)="panel()">
           <ion-icon name="construct"></ion-icon>
         </ion-fab-button>
       </ion-fab-list>

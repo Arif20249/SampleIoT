@@ -1,9 +1,43 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header class="ion-no-border">
+  <ion-toolbar >
+    <ion-buttons slot="start" >
+      <ion-back-button color="light"></ion-back-button>
+    </ion-buttons>
     <ion-title>Panel Kontrol</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <div class="main-header"></div>
+  <div class="main-header">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="5" offset="7">
+          <div>
+            <ion-datetime-button datetime="datetime"></ion-datetime-button>
+
+              <ion-modal [keepContentsMounted]="true">
+                <ng-template>
+                  <ion-datetime id="datetime" presentation="date"[showDefaultButtons]="true"></ion-datetime>
+                </ng-template>
+              </ion-modal>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div>
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>Kelembapan</ion-card-title>
+              </ion-card-header>
+            
+              <ion-card-content>
+                <canvas #persentaseKalibrasiCanvas></canvas>
+              </ion-card-content>
+            </ion-card>
+          </div>
+        </ion-col>
+      </ion-row>
+  </ion-grid></div>
+  
 </ion-content>

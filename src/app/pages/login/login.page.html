@@ -8,11 +8,11 @@
       <ion-input placeholder="Username" type="text" clearInput="true"></ion-input>
     </ion-item>
     <ion-item class="ion-margin" id="fil">
-      <ion-input placeholder="Password" type="text" clearInput="true"></ion-input>
+      <ion-input placeholder="Password" type="password" clearInput="true"></ion-input>
     </ion-item>
 
     <div align="right">
-      <ion-button shape="round" strong="true" class="ion-margin-end">LOGIN
+      <ion-button shape="round" strong="true" class="ion-margin-end" (click)="login()">LOGIN
         <ion-icon name="log-in" slot="end"></ion-icon>
       </ion-button>
     </div>
