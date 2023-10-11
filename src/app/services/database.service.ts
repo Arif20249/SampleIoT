@@ -16,28 +16,35 @@ export class DatabaseService {
    }
 
    getDataPanel(token : string) {
-    const httpHeader = {
-      headers: new HttpHeaders({
-        'Accept': 'application/json',
-        'x-api-key' : this.key,
-        'Authorization' : `Bearer ${token}`
-      })
+
+    let params = {
     };
+
+    const httpHeader = {
+      headers: {
+        'Authorization' : 'token '+this.key
+      }
+    };
+    console.log(httpHeader)
     return new Promise((resolve, reject) => {
-      this.http.post(this.baseUrl , httpHeader,).subscribe(res => {
+      
+      this.http.post(this.baseUrl, params, httpHeader).subscribe(res => {
+        console.log(JSON.stringify(res))
         resolve(JSON.stringify(res))
       },
         err => {
             if (err.status == 400) {
               console.log("BAD REQUEST!");
             } else if (err.status == 401) { 
-              console.log("password incorect!");
+              console.log("key incorect!");
             } else if (err.status == 404) { 
               console.log("password or Username incorect!");
             } else {
               console.log(err)
             }
+            
             reject(err);
+            
         })
     })
   }
